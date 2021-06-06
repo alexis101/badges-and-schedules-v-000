@@ -7,7 +7,7 @@ def batch_badge_creator(speakers)
   badges = []
     speakers.each do |name|
       message = "Hello, my name is #{name}."
-    badges << message
+    badges.push(message)
   end
   badges
 end
@@ -17,7 +17,7 @@ def assign_rooms(speakers)
   speakers.each_with_index do |speaker,index|
     index +=1
   room = "Hello, #{speaker}! You'll be assigned to room #{index}!"
-  room_assignments << room
+  room_assignments.push(room)
 end
 room_assignments
 end
